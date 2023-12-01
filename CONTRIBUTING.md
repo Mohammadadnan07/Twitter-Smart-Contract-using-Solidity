@@ -29,12 +29,5 @@ Thank you for considering contributing to the Twitter Smart Contract Project! We
 
 If you find a bug, have a question, or want to propose a new feature, please open an issue on the GitHub repository.
 
-## Code of Conduct
 
-This project follows the [Code of Conduct](CODE_OF_CONDUCT.md). Please review and adhere to it in all interactions within the project.
-
-## License
-
-By contributing to this project, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
-
-Thank you for your contributions!
+Thank you for your contributions!😊
