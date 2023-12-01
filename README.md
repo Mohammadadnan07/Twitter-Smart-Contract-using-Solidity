@@ -10,7 +10,6 @@ This project implements a Twitter smart contract on [insert blockchain platform 
 
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -32,6 +31,4 @@ We welcome contributions from the community to enhance the functionality of this
 
 Please make sure to follow the [contributing guidelines](CONTRIBUTING.md) for a smooth collaboration.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
