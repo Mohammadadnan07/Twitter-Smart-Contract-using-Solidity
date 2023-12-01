@@ -1,0 +1,81 @@
+//SPDX-LICENSE-Identifier:MIT
+pragma solidity >=0.5.5<0.9.0;
+
+contract tweeter{
+
+struct Tweet{
+uint id;
+address author;
+string content;
+uint createdAt;
+}
+struct message{
+uint id;
+string content;
+address from;
+address to;
+uint createdAt;
+}
+
+ mapping(uint=>Tweet) public tweets;
+ mapping(address=>uint[]) public tweetsof;
+ mapping(address=>message[]) public conversations;
+ mapping(address=>mapping(address=>bool)) public operator;
+ mapping(address=>address[]) public following;
+ 
+ uint nextId;
+ uint nextMessageId;
+ 
+ function tweet(address_from,string memory_content) public{
+ tweets[nextId]=Tweet(nextId,from,content,block.timestamp);
+ nextId=nextId++;
+ }
+ 
+ function_sendmessage(address_from,address_to,string memory content)public {
+   conversations[_from].push(Message(nextMessageId,content,from,to,block.timestamp));
+   nextMessageId++;
+ }
+ function tweet(string memory_content)public{
+ _tweet(msg.sender,_content);
+ }
+ function tweet(address_from,string memory _content)public{
+ _tweet(_from,_content);
+ }
+ function sendMessage (string memory _content,address to) public{
+ _sendMessage(msg.sender,to,content);
+} 
+ function sendMessage (address_from,address_to,string memory_content) public{
+  _sendMessage(_from_,_to,_content);
+} 
+ function follow(address_followed)public{
+ following[msf.sender].push(_followed);
+ }
+ function allow(address _operator)public{
+ operators[msg.sender][_operator]=false;
+ }
+ function getLatestTweets(uint count)public returns(Tweet[] memory){
+ require(count>0 && count<=nextId,"Count is not proper");
+ Tweets[] memory _tweets= new Tweet[](counts);//array length-->count
+ uint j;
+  for(uint i=nextId-count;i<nextId;nextId++{
+   Tweet storage _structure=tweets[i];
+   _tweets[j]=Tweet(_structure.id,_structure.author,_structure.content,_structure.createdAt);
+   j=j+1;
+  }
+  return tweets;
+ }
+ function getLatestofuser(address _user,uint count) public view returns(Tweet[] memory){
+ Tweet[] memory _tweets=new tweet[](count);
+ tweetsof[_user];
+ require(count>0 && count<=nextId,"Count is not Defined");
+ uint j;
+ for(uint i=tweetsof[_user].length-count;i<nextId;i++){
+Tweet storage _structure=tweets[i];
+   _tweets[j]=Tweet(_structure.id,_structure.author,_structure.content,_structure.createdAt);
+   j=j+1;
+   }
+   return _tweets;
+ }
+
+ 
+}
