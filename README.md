@@ -1,4 +1,4 @@
-# Twitter Smart Contract Project
+# 🐤🐤Twitter Smart Contract Project
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
