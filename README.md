@@ -6,6 +6,9 @@
 
 This project implements a Twitter smart contract on [insert blockchain platform here]. The smart contract allows users to tweet, send messages, follow other users, and perform various decentralized social media functionalities.
 
+![Alt Text](https://i.postimg.cc/tTpSBBvz/Screenshot-2023-12-01-121039.png)
+
+
 ## Table of Contents
 
 - [Features](#features)
