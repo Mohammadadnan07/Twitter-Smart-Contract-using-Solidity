@@ -9,9 +9,6 @@ This project implements a Twitter smart contract on [insert blockchain platform 
 ## Table of Contents
 
 - [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -29,17 +26,22 @@ This project implements a Twitter smart contract on [insert blockchain platform 
 
 - **Timeline Retrieval**: Users can retrieve the latest tweets or tweets from a specific user.
 
-## Getting Started
+## Usage
 
-### Prerequisites
+1. [Provide examples and instructions on how users can interact with your smart contract]
 
-- [List any prerequisites or dependencies users need to install before using your project]
+```solidity
+// Example code snippet for tweeting
+function tweet(string memory content) public {
+    _tweet(msg.sender, content);
+}
 
-### Installation
+// Example code snippet for sending a message
+function sendMessage(address from, address to, string memory content) public {
+    _sendMessage(from, to, content);
+}
 
-1. [Provide step-by-step instructions on how to install and deploy your smart contract]
-
-```bash
-# Example installation commands
-npm install
-truffle migrate --network development
+// Example code snippet for following a user
+function follow(address followed) public {
+    following[msg.sender].push(followed);
+}
