@@ -1,4 +1,3 @@
-# Twitter-Smart-Contract-using-Solidity
 # Twitter Smart Contract Project
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -20,9 +19,15 @@ This project implements a Twitter smart contract on [insert blockchain platform 
 
 ## Features
 
-- Tweeting functionality, allowing users to post tweets on the decentralized platform.
-- Messaging functionality, enabling users to send messages to each other.
-- Follow functionality, allowing users to follow each other on the decentralized platform.
+- **Tweeting Functionality**: Users can post tweets on the decentralized platform.
+
+- **Messaging Functionality**: Users can send messages to each other.
+
+- **Follow Functionality**: Users can follow each other on the decentralized platform.
+
+- **Permission Management**: Users can allow or disallow operators to perform certain actions.
+
+- **Timeline Retrieval**: Users can retrieve the latest tweets or tweets from a specific user.
 
 ## Getting Started
 
